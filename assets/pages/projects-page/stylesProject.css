@@ -1,0 +1,212 @@
+/* Variables */
+
+:root{
+    --main-color: #3498db; 
+    --main-text-color: #FFF; 
+    --border-color: #999; 
+    --bio-bg-color: #1E2A3A; 
+    --bio-border-color: #293544; 
+    --about-bg-color: #2c3e50;  
+    --secondary-text-color:#100F0F;
+}
+
+/* General */ 
+.highlight {
+    color: var(--main-color);
+}
+
+/* Container */
+
+#container {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-text-color);
+}
+
+#bio-container  {
+    flex: 1 1 30%;
+    min-height: 100vh;
+    background-color: var(--bio-bg-color);
+    text-align: center;
+    padding: 30px 12px;
+    border-right: 5px solid var(--bio-border-color);
+}
+
+#projects {
+    flex: 1 1 70%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--about-bg-color);
+    padding: 50px;
+}
+
+#bio-container h2 {
+    margin-bottom: 25px;
+}
+
+#bio-container p {
+    margin-bottom: 20px;
+}
+
+#bio-container #welcome-text {
+    font-weight: bold;
+}
+
+#bio-image {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+#social-container li {
+    flex: 1 1 0;
+    max-width: 60px;
+}
+
+#social-container li a {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+#email-container {
+    display: flex;
+    justify-content: center;
+}
+
+#email-container ion-icon,
+#email-container a {
+    flex: 1 1 0;
+}
+
+#email-container a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    max-width: 225px;
+}
+
+#email-container ion-icon {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+    max-width: 20px;
+}
+
+
+
+/* Projects */
+
+#projects {
+    /* margin-left: 30px; */
+}
+
+h1 {
+    font-size: 42px;
+    margin: 50px 0 80px 20px;
+}
+
+#container-button {
+    /* background-color: green; */
+}
+
+#btn-projects {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 25px 0 0 20px;
+    padding: 12px 10px;
+    width: 150px;
+    display: flex;
+    text-align: center;
+}
+
+#btn-projects ion-icon,
+#btn-projects span {
+    flex: 1 1 0; /* set the distance between elements for 0*/
+}
+
+#btn-projects ion-icon {
+    font-size: 20px;
+    max-width: 20px;
+}
+
+#btn-projects:hover {
+    background-color: transparent;
+}
+
+#container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.project {
+    width: 500px; 
+    height: 540px; 
+}
+#project-weather {
+    background-color: aqua;
+    border-radius: 30px;
+    background: #C5C9CD;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#image-container {
+    background: url('../../images/weather-project-cover.png') center, lightgray 50% / cover no-repeat;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 290px;
+    margin: 20px;
+    background-size:cover;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
+}
+
+#image-container:hover {
+    transform: scale(1.2);
+}
+
+#container-project-info {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px; 
+    gap: 15px;
+    color: var(--secondary-text-color);
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#technologies-used {
+    margin: 10px 0 10px 0;
+    display: flex;
+    gap: 20px;
+}
+
+p {
+    margin: 10px 0 10px 0; 
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size:18px;
+}
+
