@@ -10,27 +10,6 @@
     --secondary-text-color: #100F0F;
 }
 
-/* General */
-.highlight {
-    color: var(--main-color);
-}
-
-/* Container */
-
-#container {
-    display: flex;
-    flex-direction: row;
-    color: var(--main-text-color);
-}
-
-#bio-container {
-    flex: 1 1 30%;
-    min-height: 100vh;
-    background-color: var(--bio-bg-color);
-    text-align: center;
-    padding: 30px 12px;
-    border-right: 5px solid var(--bio-border-color);
-}
 
 #projects {
     flex: 1 1 70%;
@@ -38,67 +17,6 @@
     min-height: 100vh;
     background-color: var(--about-bg-color);
     padding: 50px;
-}
-
-#bio-container h2 {
-    margin-bottom: 25px;
-}
-
-#bio-container p {
-    margin-bottom: 20px;
-}
-
-#bio-container #welcome-text {
-    font-weight: bold;
-}
-
-#bio-image {
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    margin-bottom: 25px;
-}
-
-#social-container {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    border-bottom: 1px solid var(--border-color);
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-}
-
-#social-container li {
-    flex: 1 1 0;
-    max-width: 60px;
-}
-
-#social-container li a {
-    color: var(--main-color);
-    font-size: 30px;
-}
-
-#email-container {
-    display: flex;
-    justify-content: center;
-}
-
-#email-container ion-icon,
-#email-container a {
-    flex: 1 1 0;
-}
-
-#email-container a {
-    color: var(--main-text-color);
-    text-decoration: none;
-    max-width: 225px;
-}
-
-#email-container ion-icon {
-    color: var(--main-color);
-    font-size: 20px;
-    margin-right: 5px;
-    max-width: 20px;
 }
 
 
@@ -112,6 +30,8 @@
 h1 {
     font-size: 35px;
     margin: 50px 0 80px 20px;
+    color: var(--main-text-color);
+    text-align: center;
 }
 
 #container-button {
@@ -153,6 +73,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 20px;
+    gap: 50px; 
+
 }
 
 .project {
@@ -160,15 +82,29 @@ h1 {
     height: 435px;
 }
 
-#project-weather {
+#project-weather,
+#bah-socorro-landing-page {
     background-color: aqua;
     border-radius: 30px;
     background: #C5C9CD;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#image-container {
+
+
+.weather {
     background: url('../../images/weather-project-cover.png') center, lightgray 50% / cover no-repeat;
+}
+
+.bah-socorro{
+    background: url('../../images/bah-socorro-cover.png') center, lightgray 50% / cover no-repeat;
+}
+
+#image-container #bahsocorro {
+
+}
+
+#image-container {
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
     height: 290px;
     margin: 20px;
@@ -177,6 +113,11 @@ h1 {
     cursor: pointer;
     transition: all .8s ease-in-out;
 }
+
+
+
+
+
 
 /* #image-container:hover {
     transform: scale(1.2);
@@ -197,6 +138,7 @@ h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     margin-top: 10px;
+    word-spacing: 5px;
 }
 
 #technologies-used {
@@ -217,15 +159,22 @@ p {
 
 .projects-dialog {
     /* background-color: red; */
-    position: absolute;
-    top: 40vh;
-    left: 30vw;
+    position: fixed;
+    top: 20%;
+    left: 25%;
     width: 800px;
     height: 430px;
-    border-radius: 30px;
-    background: #C5C9CD;
+    border: none;
+    border-radius: 10px;
+    /* background: #C5C9CD; */
+    background-color: #356086;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    /* transition: all 3s ease-in-out; */
+    
+    transition: all 3s ease-in-out;
+}
+
+dialog {
+    transition: all 3s ease-in-out;
 }
 
 header {
@@ -271,20 +220,40 @@ main {
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 120px;
     height: 40px;
-    color: #FFF5F5;
+    color: #FFF5F5; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* column-gap: 7px; */
+    margin-left: 190px;
+    margin: 10px 0 0 190px;
+    cursor: pointer;
     
+}
 
+#dialog-container-button:hover{
+    background-color: #ff1f1f; 
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
 .close {
     color: #FFF5F5;
     width: 25px;
     height: 25px;
-    padding: 5px;
-    /* margin-left: 2px; */
-    /* margin-right: 10px; */
+    
 }
+
+
+
+
+dialog[open] {
+    animation: fadein 1s ease-in forwards;
+  }
+  
+  @keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
