@@ -2,24 +2,29 @@ const imageContainer = document.querySelectorAll('#image-container');
 
 const dialogWeather = document.getElementById('dialog-weather'); 
 const dialogBahSocorro = document.getElementById('dialog-bahsocorro'); 
+const dialogRagnarok = document.getElementById('dialog-ragnarok'); 
 
 const dialogContainerButton = document.querySelectorAll('#dialog-container-button'); 
 
 
-let dialogIsClose = false; 
+let dialogIsOpen = false; 
 
 
 imageContainer.forEach((image, index) => image.addEventListener ('click' , () =>  {
-        if (dialogIsClose == false) {
+        if (dialogIsOpen == false) {
 
             if (index == 0 ) {
                 dialogWeather.open = true; 
-                dialogIsClose = true; 
+                dialogIsOpen = true; 
             
             } else if (index == 1) {
                 dialogBahSocorro.open = true; 
-                dialogIsClose = true; 
-            }
+                dialogIsOpen = true; 
+            
+            } else if (index == 2) {
+                dialogRagnarok.open = true;
+                dialogIsOpen = true; 
+            } 
 
         } 
 
@@ -28,11 +33,15 @@ imageContainer.forEach((image, index) => image.addEventListener ('click' , () =>
 dialogContainerButton.forEach((dialog, index) => dialog.addEventListener('click', () => {
         if (index == 0){
             dialogWeather.open = false; 
-            dialogIsClose = false; 
+            dialogIsOpen = false; 
 
         } else if (index == 1) {
             dialogBahSocorro.open = false; 
-            dialogIsClose = false; 
+            dialogIsOpen = false; 
+        
+        } else if (index == 2) {
+            dialogRagnarok.open = false; 
+            dialogIsOpen = false; 
         }
 })); 
 

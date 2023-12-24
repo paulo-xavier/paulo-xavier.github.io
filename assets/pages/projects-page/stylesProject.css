@@ -73,7 +73,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 20px;
-    gap: 50px; 
+    justify-content: center;
+    gap: 50px;
 
 }
 
@@ -83,7 +84,8 @@ h1 {
 }
 
 #project-weather,
-#bah-socorro-landing-page {
+#bah-socorro-landing-page,
+#record-of-ragnarok {
     background-color: aqua;
     border-radius: 30px;
     background: #C5C9CD;
@@ -96,13 +98,16 @@ h1 {
     background: url('../../images/weather-project-cover.png') center, lightgray 50% / cover no-repeat;
 }
 
-.bah-socorro{
+.bah-socorro {
     background: url('../../images/bah-socorro-cover.png') center, lightgray 50% / cover no-repeat;
 }
 
-#image-container #bahsocorro {
+.ragnarok {
+    background: url('../../images/record-of-ragnarok-cover.png') center, lightgray 50% / cover no-repeat;
 
 }
+
+
 
 #image-container {
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
@@ -171,7 +176,7 @@ p {
     /* background: #C5C9CD; */
     background-color: #6ca5d6;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
+
     transition: all 3s ease-in-out;
 
     /* color: white; */
@@ -220,10 +225,13 @@ main {
 
 #dialog-paragraph {
     font: 'Rubik', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 25px;
     height: 150px;
     overflow-y: scroll;
+    text-align: justify;
+    padding: 22px;
+
 }
 
 
@@ -233,18 +241,18 @@ main {
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 120px;
     height: 40px;
-    color: #FFF5F5; 
+    color: #FFF5F5;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 190px;
     margin: 0px 0 0 190px;
     cursor: pointer;
-    
+
 }
 
-#dialog-container-button:hover{
-    background-color: #ff1f1f; 
+#dialog-container-button:hover {
+    background-color: #ff1f1f;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -252,7 +260,7 @@ main {
     color: #FFF5F5;
     width: 25px;
     height: 25px;
-    
+
 }
 
 
@@ -260,13 +268,14 @@ main {
 
 dialog[open] {
     animation: fadein 1s ease-in forwards;
-  }
-  
-  @keyframes fadein{
-    0%{
-      opacity:0;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
     }
-    100%{
-      opacity:1;
+
+    100% {
+        opacity: 1;
     }
-  }
+}
