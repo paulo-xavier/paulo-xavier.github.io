@@ -85,7 +85,8 @@ h1 {
 
 #project-weather,
 #bah-socorro-landing-page,
-#record-of-ragnarok {
+#record-of-ragnarok,
+#notifications-page {
     background-color: aqua;
     border-radius: 30px;
     background: #C5C9CD;
@@ -104,9 +105,11 @@ h1 {
 
 .ragnarok {
     background: url('../../images/record-of-ragnarok-cover.png') center, lightgray 50% / cover no-repeat;
-
 }
 
+.notifications {
+    background: url('../../images/notifications-page.png') center, lightgray 50% / cover no-repeat;
+}
 
 
 #image-container {
