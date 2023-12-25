@@ -79,9 +79,16 @@
         }
     }
 
-    @media (max-width: 415px) {
+
+    @media (max-width: 479px) {
         .projects-dialog {
-            left: 0px;
+            left: 1%;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .projects-dialog {
+            left: 50px;
             width: 320px;
         }
 
@@ -119,5 +126,49 @@
         }
 
     }
- 
+
+    
+    @media (max-width: 400px) {
+        .projects-dialog {
+            left: 25px;
+        }
+    }
+    @media (max-width: 370px) {
+        .projects-dialog {
+            left: 10px;
+        }
+    }
+    @media (max-width: 350px) {
+        .projects-dialog {
+            left: 26px;
+            width: 280px;
+            height: 680px;
+        }
+
+        .project {
+            width: 250px;
+        }
+
+        #dialog-bahsocorro, 
+        #dialog-ragnarok, 
+        #dialog-notifications-page {
+            height: 650px;
+        }
+
+        .dialog-project-title-bah {
+            margin: 6px 5px;
+            word-break: normal;
+        }
+
+    }
+    
+    @media (max-width: 330px) {
+    
+        .projects-dialog {
+            left: 15px;
+        }
+
+    }
+
+    
 }
