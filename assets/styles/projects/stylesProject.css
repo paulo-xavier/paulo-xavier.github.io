@@ -138,7 +138,7 @@ p {
 
 
 /* Dialog */
-.projects-dialog {
+.projects-dialog{
     position: fixed;
     top: 20%;
     left: 25%;
@@ -186,10 +186,12 @@ main {
 
 
 #dialog-project-info {
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-left: 10px;
+    
 }
 
 #dialog-paragraph {
@@ -200,6 +202,7 @@ main {
     overflow-y: scroll;
     text-align: justify;
     padding: 22px;
+    margin-left: -20px;
 }
 
 #dialog-container-button {
