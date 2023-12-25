@@ -31,8 +31,6 @@
         height: 130px;
         font-size: 15px;
         padding: 28px;
-
-
     }
 
     .project-image{
@@ -40,7 +38,6 @@
         width: 330px; 
         margin: 8px auto;
         display: block;
-        
     }
 
     #dialog-container-button {
@@ -55,8 +52,6 @@
     
     h3 {
         font-size: 15px;
-        /* margin-left: 10px; */
-        /* padding: 28px; */
         display: block;
         margin: auto;
     }
@@ -159,7 +154,6 @@
             margin: 6px 5px;
             word-break: normal;
         }
-
     }
     
     @media (max-width: 330px) {
@@ -167,8 +161,5 @@
         .projects-dialog {
             left: 15px;
         }
-
     }
-
-    
 }

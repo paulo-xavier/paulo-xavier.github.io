@@ -1,5 +1,4 @@
 /* Variables */
-
 :root {
     --main-color: #3498db;
     --main-text-color: #FFF;
@@ -10,7 +9,7 @@
     --secondary-text-color: #100F0F;
 }
 
-
+/* Projects */
 #projects {
     flex: 1 1 70%;
     height: 100%;
@@ -19,23 +18,11 @@
     padding: 50px;
 }
 
-
-
-/* Projects */
-
-#projects {
-    /* margin-left: 30px; */
-}
-
 h1 {
     font-size: 35px;
     margin: 50px 0 80px 20px;
     color: var(--main-text-color);
     text-align: center;
-}
-
-#container-button {
-    /* background-color: green; */
 }
 
 #btn-projects {
@@ -75,7 +62,6 @@ h1 {
     margin-left: 20px;
     justify-content: center;
     gap: 50px;
-
 }
 
 .project {
@@ -92,8 +78,6 @@ h1 {
     background: #C5C9CD;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-
 
 .weather {
     background: url('../../images/weather-project-cover.png') center, lightgray 50% / cover no-repeat;
@@ -122,17 +106,7 @@ h1 {
     transition: all .8s ease-in-out;
 }
 
-
-
-
-
-
-/* #image-container:hover {
-    transform: scale(1.2);
-} */
-
 #container-project-info {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,12 +137,8 @@ p {
 }
 
 
-
-
 /* Dialog */
-
 .projects-dialog {
-    /* background-color: red; */
     position: fixed;
     top: 20%;
     left: 25%;
@@ -176,13 +146,9 @@ p {
     height: 430px;
     border: none;
     border-radius: 10px;
-    /* background: #C5C9CD; */
     background-color: #6ca5d6;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
     transition: all 3s ease-in-out;
-
-    /* color: white; */
 }
 
 dialog {
@@ -234,9 +200,7 @@ main {
     overflow-y: scroll;
     text-align: justify;
     padding: 22px;
-
 }
-
 
 #dialog-container-button {
     border-radius: 10px;
@@ -251,7 +215,6 @@ main {
     margin-left: 190px;
     margin: 0px 0 0 190px;
     cursor: pointer;
-
 }
 
 #dialog-container-button:hover {
@@ -263,12 +226,10 @@ main {
     color: #FFF5F5;
     width: 25px;
     height: 25px;
-
 }
 
 
-
-
+/*Animations*/
 dialog[open] {
     animation: fadein 1s ease-in forwards;
 }

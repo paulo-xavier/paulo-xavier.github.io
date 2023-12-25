@@ -15,7 +15,6 @@
 }
 
 /* Container */
-
 #container {
     display: flex;
     flex-direction: row;
@@ -102,7 +101,6 @@
 
 
 /* about container */ 
-
 #name {
     font-size: 42px;
     margin-bottom: 15px;
@@ -117,6 +115,7 @@
 .description {
     max-width: 75%;
     margin-bottom: 10px;
+    line-height: 22px;
 }
 
 #btn-projects {
@@ -153,23 +152,24 @@
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 #skills-container {
     display: flex;
+    row-gap: 5px;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
 .skills-box {
     flex: 1 1 33%;
-    max-width: 33%;
+    max-width: 44%;
     margin-bottom: 35px;
 }
 
 .skills-title {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 25px;
     font-weight: bold;
     padding-left: 10px;
@@ -177,6 +177,6 @@
 }
 
 .skills-box i {
-    font-size: 45px;
-    margin-right: 10px;
+    font-size: 35px;
+    margin: 5px;
 }

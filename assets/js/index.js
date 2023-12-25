@@ -7,9 +7,7 @@ const dialogNotificationsPage = document.getElementById('dialog-notifications-pa
 
 const dialogContainerButton = document.querySelectorAll('#dialog-container-button'); 
 
-
 let dialogIsOpen = false; 
-
 
 imageContainer.forEach((image, index) => image.addEventListener ('click' , () =>  {
         if (dialogIsOpen == false) {
