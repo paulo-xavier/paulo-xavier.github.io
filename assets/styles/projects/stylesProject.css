@@ -69,7 +69,10 @@ h1 {
     height: 435px;
 }
 
+
+#project-dashboard,
 #project-weather,
+#project-advice-generator,
 #bah-socorro-landing-page,
 #record-of-ragnarok,
 #notifications-page {
@@ -79,8 +82,16 @@ h1 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.dashboard {
+    background: url('../../images/dashboard-cover.png') center, lightgray 50% / cover no-repeat;
+}
+
 .weather {
     background: url('../../images/weather-project-cover.png') center, lightgray 50% / cover no-repeat;
+}
+
+.advice-generator {
+    background: url('../../images/advice-generator-cover.png') center, lightgray 50% / cover no-repeat;
 }
 
 .bah-socorro {
@@ -92,8 +103,9 @@ h1 {
 }
 
 .notifications {
-    background: url('../../images/notifications-page.png') center, lightgray 50% / cover no-repeat;
+    background: url('../../images/notifications-page-cover.png') center, lightgray 50% / cover no-repeat;
 }
+
 
 
 #image-container {
@@ -128,6 +140,8 @@ h2 {
     display: flex;
     gap: 20px;
 }
+
+
 
 p {
     margin: 10px 0 10px 0;
